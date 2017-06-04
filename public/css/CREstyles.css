@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.navbar {
+	background-color: hsla(232,90%,37%,0.00);
+	min-height: 100px;
+	margin-top: 15px;
+	background-image: -webkit-linear-gradient(270deg,rgba(43,65,211,0.81) 0%,rgba(0,6,122,0.81) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(43,65,211,0.81) 0%,rgba(0,6,122,0.81) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(43,65,211,0.81) 0%,rgba(0,6,122,0.81) 100%);
+	background-image: linear-gradient(180deg,rgba(43,65,211,0.81) 0%,rgba(0,6,122,0.81) 100%);
+	min-width: 300px;
+}
+.bg1 {
+	background-image: url(../assets/reKit.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 205px;
+}
+.jumbotron {
+	margin-bottom: 90px;
+	background-color: hsla(0,0%,100%,0.85);
+}
+.bg2 {
+	background-color: #FBFFF1;
+	text-align: center;
+	padding-top: 20px;
+	/* [disabled]padding-bottom: 20px; */
+}
+.bg3 {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #E7E5DF;
+}
+#aboutDiv {
+	/* [disabled]background-color: hsla(0,0%,100%,0.50); */
+	/* [disabled]float: right; */
+}
+.logoImg {
+	height: 79px;
+}
+.reLogoPad {
+	/* [disabled]max-height: 50px; */
+	padding-left: 5px;
+	padding-right: 5px;
+	/* [disabled]max-width: 150px; */
+}
+body {
+	min-width: 305px;
+}
+.navbar-brand {
+	padding-top: 10px;
+	height: 100px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: inherit;
+}
+#wre {
+	float: left;
+	clear: both;
+}
+p, li{
+	font-family: raleway;
+	font-style: normal;
+	font-weight: 200;
+	font-size: medium;
+}
+h1, h2, h3  , h4, h5{
+	font-family: raleway;
+	font-style: italic;
+	font-weight: 400;
+}
+.logoWidth {
+	max-height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-circle {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	max-height: 200px;
+}
+#caret:before {
+	content: " ";
+	width: 0px;
+	height: 15px;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+	border-bottom: 15px solid black;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: -15px;
+	z-index: 9;
+}
+#caret:after {
+	content: " ";
+	width: 0px;
+	height: 15px;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+	border-bottom: 15px solid #E7E5DF;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: -13px;
+	z-index: 10;
+}
+.social {
+	width: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 50px;
+	margin-top: 10px;
+	display: none;
+}
+.socialIcon {
+	width: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+@media (min-width:768px){
+.navbar-nav > li > a {
+	line-height: 70px;
+	font-size: 14px;
+	vertical-align: bottom;
+	display: inline-block;
+	position: relative;
+	bottom: -28px;
+	font-family: raleway;
+	font-style: normal;
+	font-weight: 400;
+	/* [disabled]letter-spacing: 2px; */
+}
+	
+li.active a:before {
+	/* display: inline;
+    border-bottom: 3px solid #00b8fd;
+    float: left;
+    margin: 0;*/
+	content: " ";
+	width: 0px;
+	height: 15px;
+	border-left: 7.5px solid transparent;
+	border-right: 7.5px solid transparent;
+	border-top: 15px solid #d8ca96;
+	display: inline-block;
+	left: 50%;
+	position: relative;
+	top: -17px;
+}
+.social {
+	display: inherit;
+}
+}
+
+@media (min-width:498px){
+#wre {
+	float: right;
+	clear: none;
+}
+.reLogoPad {
+	/* [disabled]max-height: 75px; */
+	padding-left: 10px;
+	padding-right: 10px;
+}
+}
+
+@media (max-width:578px){
+	.col-xxs-12 {
+	width: 100%;
+}
+}
